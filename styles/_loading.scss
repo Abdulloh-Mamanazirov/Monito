@@ -1,0 +1,33 @@
+.loading {
+  z-index: 9999;
+  position: fixed;
+  inset: 0;
+  background-color: $primary;
+  display: grid;
+  place-items: center;
+
+  animation: fade 1s linear 3s 1 both;
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px dashed #000000;
+
+    animation: round 1s ease-in-out infinite both;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes round {
+  to {
+    transform: rotate(360deg);
+  }
+}

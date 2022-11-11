@@ -1,0 +1,72 @@
+footer {
+  background-color: $primary;
+  border-radius: 40px 40px 0px 0px;
+  padding: 80px 130px 20px 130px;
+  .footer-items {
+    .register {
+      background-color: $main-blue;
+      border-radius: 16px;
+      padding: 35px;
+      grid-template-columns: 1fr 2fr;
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $white;
+      }
+      .inputs {
+        background-color: $white;
+        padding: 15px;
+        border-radius: 14px;
+        button {
+          font-weight: 500;
+          font-size: 16px;
+          border-radius: 8px;
+        }
+        input {
+          width: 590px;
+          border-radius: 8px;
+          border: 1px solid #99a2a5;
+          padding: 14px 28px;
+        }
+      }
+    }
+    .links {
+      padding: 40px 0;
+      justify-content: space-between;
+      border-bottom: 1px solid #99a2a5;
+      .left-links {
+        ul {
+          gap: 60px;
+          li {
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+      .right-links {
+        gap: 40px;
+        i {
+          font-size: 25px;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: #667479;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}

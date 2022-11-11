@@ -1,0 +1,58 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.portion{
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn-1{
+  border: 1.5px solid $main-blue;
+  background-color:$main-blue;
+  color: $white;
+  padding: 12px 28px;
+  border-radius: 57px;
+  transition: all .3s;
+  &:hover{
+    border-width: 1.5px;
+    background-color: transparent;
+    color: $main-blue;
+    font-weight: 700;
+  }
+  &:active{
+    opacity: .7;
+  }
+}
+
+
+.btn-2{
+  border:1.5px solid $main-blue;
+  background-color: transparent;
+  color: $main-blue;
+  padding: 12px 28px;
+  border-radius: 57px;
+  transition: all .3s;
+  &:hover{
+    background-color: $main-blue;
+    color: $white;
+  }
+  &:active{
+    opacity: .7;
+  }
+}
+
+
+.hidden{
+  width: 100%;
+  display: none;
+  text-align: center;
+}

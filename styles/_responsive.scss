@@ -1,0 +1,272 @@
+@media (max-width: $lg) {
+  .container {
+    max-width: $md + 200px;
+  }
+}
+@media (max-width: $md) {
+  .container {
+    max-width: $sm + 150px;
+  }
+  .navbar {
+    .links,
+    .dropdown,
+    .input-icon,
+    .btn-1 {
+      display: none;
+    }
+    .lupa {
+      display: block;
+    }
+  }
+  .sidebar {
+    display: block;
+    .links,
+    .dropdown,
+    .input-icon,
+    .btn-1 {
+      display: block;
+    }
+  }
+  #partners,
+  #adoption {
+    display: none;
+  }
+
+  .showcase {
+    flex-direction: column;
+    .text {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 46px;
+    }
+    h2 {
+      background-position: 350px;
+      font-size: 28px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .btn-1 {
+      margin-left: 0px;
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+    .showcase {
+      background-image: url(../Monito-images/Shapes/showcase-2.svg),
+        url(../Monito-images/Shapes/showcase-6.svg),
+        url(../Monito-images/Shapes/showcase-5.svg);
+      background-repeat: no-repeat;
+      background-position: -30px 0px;
+    }
+  }
+
+  #new {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .new-heading {
+      align-items: center;
+    }
+  }
+
+  #friend {
+    .friend-box {
+      max-height: unset;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      background-position: -120px -350px;
+      .friend-text {
+        text-align: center;
+      }
+    }
+  }
+
+  #products {
+    .products-heading {
+      align-items: center;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #knowladge {
+    .knowladge-heading {
+      align-items: center;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      .card-2,
+      .card-3 {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    .register {
+      grid: unset;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .inputs {
+      display: flex;
+      input#email {
+        width: unset;
+      }
+      button {
+        width: unset;
+      }
+    }
+    .links {
+      justify-content: unset;
+      flex-direction: column;
+      ul {
+        justify-content: space-between;
+      }
+      .right-links {
+        margin-top: 30px;
+        justify-content: center;
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      .logo {
+        order: -1;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .hidden {
+    margin: 20px 0;
+    display: block;
+  }
+  .navbar {
+    padding: 10px 0;
+  }
+  #new {
+    margin-top: 20px;
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      h4 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+      h5 {
+        font-size: 16px;
+      }
+      .dot {
+        display: block;
+        visibility: hidden;
+      }
+    }
+    .new-heading {
+      align-items: center;
+      p {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      .btn-2 {
+        display: none;
+      }
+    }
+  }
+
+  #friend {
+    .friend-box {
+      overflow: hidden;
+      padding: 0;
+      max-height: unset;
+      flex-direction: column-reverse;
+      // align-items:flex-end;
+      background-position: -180px -400px;
+      .friend-text {
+        text-align: center;
+        h2 {
+          font-size: 36px;
+        }
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  #products {
+    display: none;
+  }
+
+  #knowladge {
+    margin-top: 20px;
+    .knowladge-heading {
+      align-items: center;
+      p {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      .btn-2 {
+        display: none;
+      }
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      .card-2,
+      .card-3 {
+        display: block;
+      }
+    }
+  }
+
+  footer {
+    padding: 40px 0;
+    .register {
+      grid: unset;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .inputs {
+      display: flex;
+
+      input#email {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    .footer-items {
+      .links {
+        .left-links {
+          ul {
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}

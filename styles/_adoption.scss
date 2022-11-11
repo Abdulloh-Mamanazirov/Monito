@@ -1,0 +1,43 @@
+#adoption{
+    .adoption-box{
+        background-color: $adoption;
+        border-radius: 20px;
+        align-items: center;
+        color: $main-blue;
+        background-image: url(../Monito-images/Shapes/showcase-6.svg);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        background-position: -250px -300px;
+        .adoption-text{
+            padding: 64px 0 64px 85px;
+            .adoption-title{
+                gap: 15px;
+                align-items: center;
+                h2{
+                    font-weight: 800;
+                    font-size: 52px;
+                }
+            }
+            h3{
+                padding-top: 5px;
+                font-weight: 700;
+                font-size: 36px;
+            }
+            p{
+                padding: 8px 0 42px 0;
+                font-weight: 500;
+                font-size: 12px;
+                max-width: 200px;
+            }
+            .btn-1{
+                margin-right: 15px;
+            }
+        }
+        .adoption-image{
+            background-image: url(../Monito-images/Shapes/showcase-8.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 70px;
+        }
+        
+    }
+}
